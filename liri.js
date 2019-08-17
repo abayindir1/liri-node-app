@@ -13,8 +13,8 @@ var input2 = process.argv.slice(3).join(" ")
 function spotifyNode(song) {
   var spotify = new Spotify(keys.spotify);
   var song = input2;
-  if (song === undefined || song === "") {
-    song = "The Sign"
+  if (!song) {
+    song = "The Sign Ace of Base"
   }
   spotify.search({ type: 'track', query: song }, function (err, music) {
     if (err) {
@@ -24,9 +24,9 @@ function spotifyNode(song) {
     console.log("Name of the song you searched: " + music.tracks.items[0].name);
     console.log("Spotify link of the song: " + music.tracks.items[0].external_urls.spotify);
     console.log("The album is: " + music.tracks.items[0].album.name);
+    // console.log(music.tracks.items[0])
   });
 }
-// spotifyNode()
 
 function omdbNode(movieName) {
   var movieName = input2;
@@ -46,7 +46,6 @@ function omdbNode(movieName) {
     console.log("Actors: " + concert.data.Actors)
   })
 }
-// omdbNode()
 
 function bandsInTownNode() {
   var artist = input2;
@@ -60,21 +59,18 @@ function bandsInTownNode() {
     }
   })
 }
-// bandsInTownNode()
 
 function doWhatItSays() {
   fs.readFile("random.txt", "utf8", function (err, data) {
     if (err) {
       return console.log(err);
     }
-    // console.log(data)
-    
 
     var dataArray = data.split(",")
-
-    
-
-    run(dataArray[0], dataArray[1])
+     
+    input1 = dataArray[0]
+    input2 = dataArray[1]
+    run()
   })
 }
 
@@ -97,4 +93,4 @@ function run() {
       break;
   }
 }
-run(input1, input2)
+run()
