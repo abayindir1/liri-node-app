@@ -28,7 +28,7 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
 * This will show the information about the movie in your terminal/bash window  
 
     node liri.js movie-this <'movie name'>  
-![Screen Shot](/screenshots/movie-this.png")  
+![Screen Shot](/screenshots/moviethis.png)  
 
 ### *do-what-it-says*  
 * LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.  
