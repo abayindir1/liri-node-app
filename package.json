@@ -22,6 +22,8 @@
     "bandsintown": "^1.0.1",
     "dotenv": "^8.0.0",
     "inquirer": "^6.5.1",
+    "lodash": "^4.17.15",
+    "lodash.template": "^4.5.0",
     "node-spotify-api": "^1.1.1"
   }
 }
