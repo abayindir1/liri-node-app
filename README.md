@@ -5,24 +5,29 @@
 ## About the app
 LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
 
-## Parameters 
+##Instructions  
+1. Open your terminal such as Bash.  
+2. Navigate to the folder that contains the `liri.js` file.   
+3. Depending on the command you run, the output will change.     
+
+## Comands
 
 ### *concert-this*
 * This will search the Bands in Town Artist Events API for an artist and render the following information about each event to the terminal  
 
-    node liri.js concert-this <artist/band name>  
+    node liri.js concert-this <'artist/band name'>  
 ![Screen Shot](/screenshots/concert-this.png)  
 
 ### *spotify-this-song*  
 * This will show the information about the song, artist ,album name and a link to the song in your terminal/bash window  
  
-    node liri.js spotify-this-song <song name>  
+    node liri.js spotify-this-song <'song name'>  
 ![Screen Shot](/screenshots/spotify-this-song.png)  
   
 ### *movie-this*  
 * This will show the information about the movie in your terminal/bash window  
 
-     node liri.js movie-this <movie name>  
+    node liri.js movie-this <'movie name'>  
 ![Screen Shot](/screenshots/movie-this.png")  
 
 ### *do-what-it-says*  
